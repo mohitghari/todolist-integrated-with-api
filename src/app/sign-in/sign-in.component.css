@@ -1,0 +1,6 @@
+input{
+    width: 300px;
+}
+.form-control.ng-untouched.ng-pristine.ng-invalid.active{
+    border:2px solid red;   
+}
