@@ -15,14 +15,7 @@ export class TodolistService {
 
   getTodo(): Observable<[Todo]>{
 
-    return this.httpClient.get<TodoResponse>(
-      'http://192.168.2.136:3000/todo',
-      {
-          headers: {
-              'Authorization': 'Bearer ' + localStorage.getItem('token')
-          }
-      }
-    )
+    return this.httpClient.get<TodoResponse>('http://192.168.2.136:3000/todo')
     .pipe(
       map(
         (response: TodoResponse) => {

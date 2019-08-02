@@ -15,11 +15,6 @@ export class UpdatetodoService {
     {
       title:title,
       isCompleted:false
-    },
-    {
-      headers : {
-        'Authorization': 'Bearer '+localStorage.getItem('token')
-      }
     });
   }
 }

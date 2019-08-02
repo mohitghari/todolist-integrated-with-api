@@ -12,10 +12,6 @@ export class DeletetodoService {
 
   deletetodo(id:number):Observable<any>
   {
-        return this.httpClient.delete('http://192.168.2.136:3000/todo/' + id ,{
-          headers : {
-            'Authorization': 'Bearer '+localStorage.getItem('token')
-          }
-        })
+        return this.httpClient.delete('http://192.168.2.136:3000/todo/' + id)
   }
 }

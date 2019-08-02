@@ -100,6 +100,7 @@ export class TodoListComponent implements OnInit {
   } 
 
   logout(){
+    localStorage.removeItem('token');
     this.location.back();
   }
   
